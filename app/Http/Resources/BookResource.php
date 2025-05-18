@@ -23,8 +23,4 @@ class BookResource extends JsonResource
         
         ];
     }
-    public function user()
-    {
-        return $this->belongsTo(User::class);
-    }
 }

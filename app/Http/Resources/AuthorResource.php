@@ -21,8 +21,5 @@ class AuthorResource extends JsonResource
             'books' => BookResource::collection($this->whenLoaded('books')),
         ];
     }
-    public function books()
-    {
-        return $this->hasMany(BookResource::class);
-    }
+    
 }
